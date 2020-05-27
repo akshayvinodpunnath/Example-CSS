@@ -5,19 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linear-Gradient</title>
     <style>
-        div {
-          border-radius: 20px;
-          width: 30%;
-          height: 20rem;
-          margin: 50px auto;
-          background: linear-gradient(35deg, #CCFFFF, #FFCCCC, rgb(3, 136, 160));
+        body {
+          background: url("stars.gif");
         }
-      
+        
+        #header-section {
+          margin-top: 2vw;
+          text-align: center;
+        }
+
+        #header-image {
+          width: 20%;
+          height: auto;
+          animation-name: star-wars;
+          animation-duration: 5s;
+          animation-iteration-count: 1;
+        }
+
+        #header-image:hover {
+          transform: scale(1.2);
+        }
+
+        @keyframes star-wars {
+            0% {
+              transform: scale(2);
+              overflow: hidden;
+            }
+            10% {
+              transform: scale(1.7);
+              overflow: hidden;
+            }
+            20% {
+              transform: scale(1.4);
+              overflow: hidden;
+            }
+            30% {
+              transform: scale(1.1);
+              overflow: hidden;
+            }
+            40% {
+              transform: scale(0.9);
+              overflow: hidden;
+            }
+            50% {
+              transform: scale(0.6);
+              overflow: hidden;
+            }
+            60% {
+              transform: scale(0.3);
+              overflow: hidden;
+            }
+            70% {
+              transform: scale(0.2);
+              overflow: hidden;
+            }
+            80% {
+              transform: scale(0.2);
+              overflow: hidden;
+            }
+            90% {
+              transform: scale(0.2);
+              visibility:hidden;
+            }
+            100% {
+              transform: scale(0);
+              visibility:hidden;
+            }
+        }
+        
       </style>
 </head>
 <body>
-    
-      <div></div>
+      
+      <header id="header-section">
+        <img src="star-wars-logo.JPG" id="header-image">
+      </header>
       
 </body>
 </html>
